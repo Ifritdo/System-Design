@@ -43,11 +43,18 @@ public class BulletSpawner : MonoBehaviour
         {
             bullet.transform.position = transform.position;
             bullet.GetComponent<BulletBoss>().speed = speed;
-
-            // Invertir la dirección de las balas ajustando la rotación en el eje Y
-            bullet.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-
             bullet.GetComponent<BulletBoss>().bulletLife = bulletLife;
+
+            // Rotar gradualmente cuando el tipo de spawner es "Spin"
+            if (spawnerType == SpawnerType.Spin)
+            {
+                bullet.transform.rotation = Quaternion.Euler(0f, 0f, transform.eulerAngles.z);
+            }
+            else // Establecer rotación predeterminada si es "Straight"
+            {
+                bullet.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+
             bullet.SetActive(true);
         }
     }
