@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8022682949419095246}
   - component: {fileID: 6983271117167517341}
   - component: {fileID: 4000584840228089978}
-  - component: {fileID: 1153657730545076805}
+  - component: {fileID: 6556426878721066846}
   m_Layer: 0
   m_Name: BulletBoss
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.20058623, y: -0.0012792558}
   m_Size: {x: 0.89325714, y: 0.40922293}
   m_Direction: 1
---- !u!114 &1153657730545076805
+--- !u!114 &6556426878721066846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +111,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 572739980492082520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34c90be288adf404eb3f19a6dd576cde, type: 3}
+  m_Script: {fileID: 11500000, guid: ae620bbf3fc20ac43805e081a76562e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  bulletLife: 5
+  rotation: 0
+  speed: 1

@@ -1,12 +1,13 @@
+// BossSpawner.cs
+
 using UnityEngine;
 
 public class BossSpawner : MonoBehaviour
 {
     public GameObject bossPrefab; // Prefab del Boss
-    public Vector2 spawnPosition; // Posición de aparición del Boss
+    public Vector3 spamPosition; // Posición de aparición del Boss
 
     private bool bossSpawned = false; // Para asegurarse de que solo se instancie un Boss
-    private float tiempoParaAparecerBoss = 900f; // 15 minutos en segundos
 
     // Referencia al spawner de enemigos normales
     public EnemySpawner enemySpawner;
@@ -17,21 +18,11 @@ public class BossSpawner : MonoBehaviour
         if (!bossSpawned)
         {
             // Coloca aquí la condición para activar el spawner del Boss
-            if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Q) || TimerLlegoAlTiempo())
+            if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Q))
             {
                 MostrarBoss();
             }
         }
-    }
-
-    private bool TimerLlegoAlTiempo()
-    {
-        // Lógica para verificar si el tiempo ha llegado a 15:00
-        if (Time.time >= tiempoParaAparecerBoss)
-        {
-            return true;
-        }
-        return false;
     }
 
     private void MostrarBoss()
@@ -44,7 +35,7 @@ public class BossSpawner : MonoBehaviour
         }
 
         // Instanciar el Boss y realizar configuraciones
-        Instantiate(bossPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(bossPrefab, spamPosition, Quaternion.identity);
         // Configuraciones adicionales del Boss...
 
         bossSpawned = true; // Marcar que el Boss ha sido instanciado

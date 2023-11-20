@@ -120,10 +120,10 @@ public class Player : MonoBehaviour
         }
         else if (collision.CompareTag("EnemyBullet"))
         {
-            LaserBeam laserBeam = collision.gameObject.GetComponent<LaserBeam>();
-            if (laserBeam != null)
+            BulletBoss bossBullet = collision.gameObject.GetComponent<BulletBoss>();
+            if (bossBullet != null)
             {
-                TakeDamage(laserBeam.damage);
+                TakeDamage(bossBullet.damageToPlayer);
                 return;
             }
         }
@@ -145,7 +145,7 @@ public class Player : MonoBehaviour
     }
 
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         Debug.Log("Daño recibido: " + damage);
         Debug.Log($"Intento de infligir daño. Estado de invulnerabilidad: {isInvulnerable}");
@@ -153,7 +153,7 @@ public class Player : MonoBehaviour
         if (isInvulnerable)
             return;
 
-        health -= Mathf.RoundToInt(damage);
+        health -= damage;
         healthBar.SetHealth(health);
 
         if (health <= 0)
