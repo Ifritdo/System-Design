@@ -36,6 +36,7 @@ public class BossSpawner : MonoBehaviour
 
     private void MostrarBoss()
     {
+        print("BOSS");
         // Desactivar el spawner de enemigos normales
         if (enemySpawner != null)
         {
