@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - EnemyBullet
+  - EnemyShip
+  - HealItem
+  - PlayerBullet
+  - Obstacle
+  - DeathWall
+  - Item
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Obstacle
+  - Water
+  - UI
+  - player
+  - EnemyBullet
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 2359557119
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Far
+    uniqueID: 4079322869
+    locked: 0
+  - name: Near
+    uniqueID: 3032510625
+    locked: 0
+  - name: Ui
+    uniqueID: 2043748435
+    locked: 0
+  - name: Player
+    uniqueID: 638852699
+    locked: 0

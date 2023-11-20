@@ -1,0 +1,843 @@
+fileFormatVersion: 2
+guid: 5e7a0347a32a79e409d35b3d9c9b64f0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fire Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 655
+        width: 131
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a602a572918f945a54ea75ae3413a8
+      internalID: 564543166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 657
+        width: 146
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15667f79b10abb4e9f2e3fd6a3febf7
+      internalID: 1751664298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 654
+        width: 143
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687e64c998983f54e8793f20c888392a
+      internalID: -327841379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_5
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 656
+        width: 137
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc4add59ffa11d4e9801b11e963c963
+      internalID: 1065683048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_7
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 657
+        width: 151
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e512228e958c7a4186c34f2acbe62bb
+      internalID: -1254179727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_8
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 661
+        width: 139
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b5401eaea375540837bcbd7fe107c7
+      internalID: 708225230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 504
+        width: 129
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0201f3d6d57cf9c48be205764c470722
+      internalID: -1452425175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_13
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 507
+        width: 147
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49ef6a0be1e72849ac1e3cdb68885a1
+      internalID: -1286782074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_14
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 503
+        width: 134
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529a0ea90e817e140a76837c60d67dcc
+      internalID: -1992051633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_15
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 504
+        width: 134
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be74fdd3a14d0ba438af035ed1d3af0e
+      internalID: -1949095849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_16
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 496
+        width: 135
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c69b4d2b2be95d46a723f75f5109e43
+      internalID: -871509141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_18
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 509
+        width: 152
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0bb23c33e5ee146bab95d50e9101cf
+      internalID: -832621939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 355
+        width: 131
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781047dbb66b7f7409622c1e05f66306
+      internalID: 974819376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 356
+        width: 139
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e26b718cd9c7534bb9b039af9414adf
+      internalID: 247995365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 352
+        width: 134
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596f7b0e75d79434e8c2ec71eb949653
+      internalID: 1596498366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_23
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 353
+        width: 137
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62c863cf173ae946be6a37c25b0c74d
+      internalID: -947657675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_24
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 348
+        width: 133
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1dd0889f7c23c4a80bd58121e47b02
+      internalID: -400065955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_27
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 358
+        width: 151
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab26a6ed07607944bd5c4f25b12fd21
+      internalID: 1529457630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 137
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851417eb7e0866f40ba1c28c33bfa45b
+      internalID: -666004364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_29
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 204
+        width: 132
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fafb4befc92a6d4c9f9dc84bf846373
+      internalID: 1216006045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_30
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 202
+        width: 136
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27494bb790c69624bb1b445b48e674c5
+      internalID: 1412329128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_33
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 203
+        width: 131
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b24b55b578db84688f0b189112ae36
+      internalID: 113446470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_34
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 201
+        width: 133
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cf68cc19412aa4ead7c419bed254c0
+      internalID: -293450968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_38
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 206
+        width: 152
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d272186aac49ed84f8c027467105e4e2
+      internalID: -797777377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_39
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 206
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54985e05150ca3747a51d01efd89d616
+      internalID: -343242732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 134
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa0d90fb02d7d54a9f87501eb824801
+      internalID: 1866766298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 50
+        width: 143
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f7e7e80ed191443a173d56c9504e1e
+      internalID: -1113836215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_42
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 52
+        width: 121
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe8dc09a112ee04da46cca2c4a1b36f
+      internalID: -1474548947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_43
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 50
+        width: 130
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cb71d47990804458aab5a4c6c721e9
+      internalID: 1400813333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_44
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 53
+        width: 132
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a209f2ee695031498e568ed6189bd8c
+      internalID: -628387741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_46
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 53
+        width: 149
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37695327682c37b4eb8275fa2d941ec0
+      internalID: 1167229717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Idle_47
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 56
+        width: 149
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6310174383ff0de4ea68f7188c3477a6
+      internalID: -1569199320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fire Idle_23: -947657675
+      Fire Idle_29: 1216006045
+      Fire Idle_42: -1474548947
+      Fire Idle_27: 1529457630
+      Fire Idle_18: -832621939
+      Fire Idle_30: 1412329128
+      Fire Idle_17: -502800170
+      Fire Idle_25: 2062798153
+      Fire Idle_40: 1866766298
+      Fire Idle_41: -1113836215
+      Fire Idle_2: 1751664298
+      Fire Idle_21: 1596498366
+      Fire Idle_35: 357919355
+      Fire Idle_3: -1920579296
+      Fire Idle_28: -666004364
+      Fire Idle_47: -1569199320
+      Fire Idle_22: -1093461170
+      Fire Idle_33: 113446470
+      Fire Idle_0: 564543166
+      Fire Idle_14: -1992051633
+      Fire Idle_37: 1470984512
+      Fire Idle_13: -1286782074
+      Fire Idle_43: 1400813333
+      Fire Idle_19: 974819376
+      Fire Idle_12: 703558851
+      Fire Idle_38: -797777377
+      Fire Idle_5: 1065683048
+      Fire Idle_31: 1415967366
+      Fire Idle_16: -871509141
+      Fire Idle_26: 57327325
+      Fire Idle_6: 285629941
+      Fire Idle_11: -1452425175
+      Fire Idle_44: -628387741
+      Fire Idle_20: 247995365
+      Fire Idle_8: 708225230
+      Fire Idle_24: -400065955
+      Fire Idle_10: -356107574
+      Fire Idle_32: 1053104292
+      Fire Idle_45: -1940685697
+      Fire Idle_46: 1167229717
+      Fire Idle_34: -293450968
+      Fire Idle_1: 933984572
+      Fire Idle_39: -343242732
+      Fire Idle_7: -1254179727
+      Fire Idle_4: -327841379
+      Fire Idle_9: -2119694632
+      Fire Idle_15: -1949095849
+      Fire Idle_36: -1880814250
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
