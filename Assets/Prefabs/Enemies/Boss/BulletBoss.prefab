@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8022682949419095246}
   - component: {fileID: 6983271117167517341}
-  - component: {fileID: 4000584840228089978}
   - component: {fileID: 6556426878721066846}
+  - component: {fileID: 7707353327154170772}
   m_Layer: 0
   m_Name: BulletBoss
   m_TagString: EnemyBullet
@@ -75,33 +75,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ef34abccc95957544b9df656efdc4651, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38c6fbf7917442941a4cc7730a676ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &4000584840228089978
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572739980492082520}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.20058623, y: -0.0012792558}
-  m_Size: {x: 0.89325714, y: 0.40922293}
-  m_Direction: 1
 --- !u!114 &6556426878721066846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,3 +101,20 @@ MonoBehaviour:
   bulletLife: 5
   rotation: 0
   speed: 1
+  damageToPlayer: 20
+--- !u!58 &7707353327154170772
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572739980492082520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16

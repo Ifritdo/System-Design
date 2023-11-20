@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLife: 5
   speed: 15
-  spawnerType: 1
+  spawnerType: 0
   firingRate: 0.5
 --- !u!1 &1526160046
 GameObject:
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLife: 5
   speed: 20
-  spawnerType: 1
+  spawnerType: 0
   firingRate: 0.5
 --- !u!1 &4961408509871349336
 GameObject:
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLife: 5
   speed: 15
-  spawnerType: 1
+  spawnerType: 0
   firingRate: 0.5
 --- !u!1 &5336666241284782987
 GameObject:
