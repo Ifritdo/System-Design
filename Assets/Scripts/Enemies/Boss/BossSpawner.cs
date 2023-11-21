@@ -1,5 +1,3 @@
-// BossSpawner.cs
-
 using UnityEngine;
 
 public class BossSpawner : MonoBehaviour
@@ -12,13 +10,22 @@ public class BossSpawner : MonoBehaviour
     // Referencia al spawner de enemigos normales
     public EnemySpawner enemySpawner;
 
+    // Temporizador para controlar la aparición del Boss después de cierto tiempo
+    private float timer = 0f;
+    public float timeToSpawnBoss = 120f; // 15 minutos en segundos
+
     private void Update()
     {
         // Verificar si el Boss no ha sido instanciado y activar el spawner del Boss
         if (!bossSpawned)
         {
-            // Coloca aquí la condición para activar el spawner del Boss
+            // Coloca aquí la condición para activar el spawner del Boss con un temporizador
+            timer += Time.deltaTime;
             if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Q))
+            {
+                MostrarBoss();
+            }
+            else if (timer >= timeToSpawnBoss)
             {
                 MostrarBoss();
             }
