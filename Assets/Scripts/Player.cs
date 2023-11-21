@@ -118,26 +118,32 @@ public class Player : MonoBehaviour
             Heal(10);
             Destroy(collision.gameObject);
         }
+
         else if (collision.CompareTag("EnemyBullet"))
         {
             BulletBoss bossBullet = collision.gameObject.GetComponent<BulletBoss>();
-            if (bossBullet != null)
+            EnemyBullet enemyBullet = collision.gameObject.GetComponent<EnemyBullet>();
+            if (bossBullet != null || enemyBullet != null)
             {
+                TakeDamage(enemyBullet.damage);
                 TakeDamage(bossBullet.damageToPlayer);
                 return;
             }
         }
+        
+        //if (collision.CompareTag("EnemyShip"))
+        //{
+        //    Enemy enemyShip = collision.gameObject.GetComponent<Enemy>();
+        //    if (enemyShip != null)
+        //    {
+        //        print("hola!");
+        //        TakeDamage(enemyShip.damage);
+        //        return;
+        //    }
+        //}
+
         else if (!isInvulnerable)
         {
-            if (collision.CompareTag("EnemyShip"))
-            {
-                Enemy enemyShip = collision.gameObject.GetComponent<Enemy>();
-                if (enemyShip != null)
-                {
-                    TakeDamage(enemyShip.GetDamage());
-                    return;
-                }
-            }
 
             // Si no se pudo determinar el tipo o obtener el componente, registras una advertencia.
             Debug.LogWarning($"Daño no reconocido al chocar con: {collision.gameObject.name} con el tag {collision.gameObject.tag}");

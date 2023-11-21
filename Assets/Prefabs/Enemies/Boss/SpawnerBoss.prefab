@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac60cf4ad261b843ab09fe279eab3a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossPrefab: {fileID: 9182826222971648061, guid: 2e6f617fe8023b744abe21719fb045bd, type: 3}
-  spawnPosition: {x: 0, y: 0}
+  bossPrefab: {fileID: 5336666241284782987, guid: becadf55c8b2fff499e77dc61098d675, type: 3}
+  spamPosition: {x: 0, y: 0, z: 0}
   enemySpawner: {fileID: 0}
+  timeToSpawnBoss: 40

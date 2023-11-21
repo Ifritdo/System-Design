@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8882851292339767566}
   - component: {fileID: 8882851292339767567}
   - component: {fileID: 8882851292339767568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,9 +71,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 638852699
+  m_SortingLayer: 5
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 7846d8a485e0a874f8ba5abb386e9a59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8882851292339767569}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c3b5734c00f78241ac1dc31716aba0a, type: 3}
   m_Name: 
@@ -102,6 +102,7 @@ MonoBehaviour:
   - {fileID: 9182826222971648061, guid: 2e6f617fe8023b744abe21719fb045bd, type: 3}
   - {fileID: 4059789500392395985, guid: bd199a36962ffe942bfcc0eb927a0f5f, type: 3}
   - {fileID: 3447040144114801556, guid: 64137607ab0577c429f70cb366527307, type: 3}
+  - {fileID: 6963266208881446251, guid: ec132be70a7f5d9419e80398b9727c63, type: 3}
   - {fileID: 6020742100806671534, guid: 2d508260f27f0044186a3f894e31d550, type: 3}
   spawnInterval: 2
   spawnRange: {x: 5, y: 5}

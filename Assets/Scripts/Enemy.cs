@@ -3,7 +3,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy Stats")]
-    [SerializeField] private int damage = 10;  // Daño que inflige el enemigo al jugador
+    public int damage = 10;  // Daño que inflige el enemigo al jugador
     [SerializeField] private int pointsValue = 0;  // Puntos que otorga al ser destruido
 
     [Header("Enemy Movement")]
