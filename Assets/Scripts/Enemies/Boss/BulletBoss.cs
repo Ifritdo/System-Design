@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletBoss : MonoBehaviour
 {
-    public float bulletLife = 1f;  // Defines how long before the bullet is destroyed
-    public float rotation = 0f;
+    public float bulletLife = 1f;  // Define cuánto tiempo antes de que la bala sea destruida
     public float speed = 1f;
 
     private Vector2 spawnPoint;
@@ -52,7 +49,7 @@ public class BulletBoss : MonoBehaviour
 
     private Vector2 Movement(float timer)
     {
-        // Moves right according to the bullet's rotation
+        // Mueve la bala hacia la derecha según la rotación de la bala
         float x = timer * speed * transform.right.x;
         float y = timer * speed * transform.right.y;
         return new Vector2(x + spawnPoint.x, y + spawnPoint.y);

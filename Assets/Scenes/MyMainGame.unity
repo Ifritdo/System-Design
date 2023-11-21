@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 130814898}
   - component: {fileID: 130814899}
+  - component: {fileID: 130814900}
   m_Layer: 5
   m_Name: BossHealthBarSlider
   m_TagString: Untagged
@@ -156,7 +157,7 @@ RectTransform:
   - {fileID: 1501244989}
   - {fileID: 382266835}
   m_Father: {fileID: 723365874}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -202,7 +203,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1250470132}
   m_FillRect: {fileID: 1506179084}
   m_HandleRect: {fileID: 1250470131}
@@ -214,6 +215,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &130814900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130814897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3032ccad6cb0a7a4c950cec20c5c121d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 130814899}
 --- !u!1 &167484637
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,11 +260,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 723365874}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 723, y: -66.26099}
+  m_AnchoredPosition: {x: 680, y: -14}
   m_SizeDelta: {x: 312.84998, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &167484640
@@ -451,7 +465,7 @@ SpriteRenderer:
   m_SortingLayerID: -1935410177
   m_SortingLayer: -1
   m_SortingOrder: 17
-  m_Sprite: {fileID: 21300000, guid: e4516f278fcd54d1e981e1c1d1d828b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6b93f33a87ae6e41805531b81477a60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -494,11 +508,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 723365874}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 78, y: -145.54999}
+  m_AnchoredPosition: {x: 8.599976, y: -125.100006}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &223864975
@@ -548,8 +562,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -584,7 +598,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -165.69107, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1251,11 +1265,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 811133985}
+  - {fileID: 130814898}
   - {fileID: 1269691172}
   - {fileID: 223864974}
   - {fileID: 167484638}
-  - {fileID: 811133985}
-  - {fileID: 130814898}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1533,11 +1547,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 723365874}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 387, y: -114}
+  m_AnchoredPosition: {x: 342, y: -60.200012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &811133986
@@ -2273,11 +2287,11 @@ RectTransform:
   - {fileID: 613076654}
   - {fileID: 632827150}
   m_Father: {fileID: 723365874}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 56, y: -36.975952}
+  m_AnchoredPosition: {x: 6, y: 17.799988}
   m_SizeDelta: {x: 620.84, y: 108.57}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1269691173
@@ -2605,7 +2619,7 @@ SpriteRenderer:
   m_SortingLayerID: -1935410177
   m_SortingLayer: -1
   m_SortingOrder: 17
-  m_Sprite: {fileID: 21300000, guid: e4516f278fcd54d1e981e1c1d1d828b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6b93f33a87ae6e41805531b81477a60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
