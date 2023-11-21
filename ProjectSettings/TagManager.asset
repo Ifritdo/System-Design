@@ -11,6 +11,7 @@ TagManager:
   - Obstacle
   - DeathWall
   - Item
+  - BossShip
   layers:
   - Default
   - TransparentFX

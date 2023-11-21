@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLife: 5
   speed: 15
-  spawnerType: 1
+  spawnerType: 0
   firingRate: 0.5
 --- !u!1 &1526160046
 GameObject:
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLife: 5
   speed: 20
-  spawnerType: 1
+  spawnerType: 0
   firingRate: 0.5
 --- !u!1 &4961408509871349336
 GameObject:
@@ -155,14 +155,12 @@ GameObject:
   - component: {fileID: 5336666241284782983}
   - component: {fileID: 5336666241284782985}
   - component: {fileID: 2029332927159761218}
-  - component: {fileID: 1295306095}
   - component: {fileID: 1754753283}
   - component: {fileID: 8283140852589261043}
-  - component: {fileID: 5439301938578785667}
   - component: {fileID: 169517417050785245}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: BossShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -258,23 +256,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1295306095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336666241284782987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce0760eac16edae49b0d8ccfcf822051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 40
-  pointsValue: 1000
-  spriteRenderer: {fileID: 0}
-  dropItems: []
-  soundManager: {fileID: 0}
 --- !u!114 &1754753283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,22 +284,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
+  pointsValue: 1000
   bossReference:
     canvasManager: {fileID: 0}
     healthBar: {fileID: 0}
---- !u!114 &5439301938578785667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336666241284782987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d481ff4d8f5f064c80aafe09ddfc43e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+    scoreManager: {fileID: 0}
 --- !u!58 &169517417050785245
 CircleCollider2D:
   m_ObjectHideFlags: 0
