@@ -163,10 +163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  pointsValue: 25
+  pointsValue: 20
+  spriteRenderer: {fileID: 0}
   dropItems:
   - itemPrefab: {fileID: 4021852280281108660, guid: f188789751cd28d4d8a97f2b709ce06c, type: 3}
     dropProbability: 0.3
+  soundManager: {fileID: 0}
 --- !u!114 &6020742100806671535
 MonoBehaviour:
   m_ObjectHideFlags: 0

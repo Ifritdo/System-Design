@@ -4,6 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class BossReference
 {
+    public BossCanvasManager canvasManager;
     public BossHealthBar healthBar;
 }
 
@@ -20,16 +21,18 @@ public class Boss : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        if (bossReference != null && bossReference.healthBar != null)
+        if (bossReference != null && bossReference.healthBar != null && bossReference.canvasManager != null)
         {
             healthBar = bossReference.healthBar;
             healthBar.SetMaxHealth(maxHealth);
             healthBar.SetHealth(currentHealth);
-            healthBar.SetSliderActive(true);
+
+            // Desactivar el objeto del Canvas al inicio
+            bossReference.canvasManager.DeactivateBossCanvas();
         }
         else
         {
-            Debug.LogWarning("La referencia a la barra de salud del jefe no está configurada correctamente.");
+            Debug.LogWarning("La referencia a la barra de salud del jefe o al Canvas Manager no está configurada correctamente.");
         }
     }
 
@@ -38,25 +41,16 @@ public class Boss : MonoBehaviour
         // Puedes agregar lógica de actualización adicional para el jefe aquí
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        if (healthBar != null)
-        {
-            healthBar.SetHealth(currentHealth);
-        }
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
+    // Resto del código del jefe...
 
     void Die()
     {
-        if (healthBar != null)
+        if (healthBar != null && bossReference.canvasManager != null)
         {
+            // Activar el objeto del Canvas cuando el jefe muere
+            bossReference.canvasManager.ActivateBossCanvas();
+
+            // Desactivar el slider cuando el jefe muere
             healthBar.SetSliderActive(false);
         }
 

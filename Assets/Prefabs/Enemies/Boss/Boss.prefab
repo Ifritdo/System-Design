@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLife: 5
   speed: 15
-  spawnerType: 0
+  spawnerType: 1
   firingRate: 0.5
 --- !u!1 &1526160046
 GameObject:
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLife: 5
   speed: 20
-  spawnerType: 0
+  spawnerType: 1
   firingRate: 0.5
 --- !u!1 &4961408509871349336
 GameObject:
@@ -154,11 +154,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5336666241284782983}
   - component: {fileID: 5336666241284782985}
-  - component: {fileID: 3766425212069059404}
   - component: {fileID: 2029332927159761218}
   - component: {fileID: 1295306095}
   - component: {fileID: 1754753283}
   - component: {fileID: 8283140852589261043}
+  - component: {fileID: 7484805894594207989}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -225,7 +225,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dcb2180df6613ac48b5bfaf0810eb83d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0abb7cc74db091943bbdb641769ee550, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -236,43 +236,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &3766425212069059404
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336666241284782987}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 2.8555703, y: -3.021708}
-  - {x: 1.9762745, y: -2.9287994}
-  - {x: 0.91612816, y: -2.4019785}
-  - {x: 0.20071554, y: -1.844058}
-  - {x: -0.6639056, y: -1.6614786}
-  - {x: -2.6327953, y: -0.75142014}
-  - {x: -2.7735648, y: -0.40670878}
-  - {x: -1.7493315, y: -0.6478141}
-  - {x: -1.7493315, y: -0.5048912}
-  - {x: -1.7320282, y: 0.30709344}
-  - {x: -2.8233132, y: 0.33037537}
-  - {x: -1.8613949, y: 0.9311721}
-  - {x: 0.40620422, y: 1.6468549}
-  - {x: 1.0875463, y: 2.2398322}
-  - {x: 2.0698767, y: 2.6197176}
-  - {x: 2.7636337, y: 2.7105258}
-  - {x: 2.745767, y: -2.934928}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!50 &2029332927159761218
 Rigidbody2D:
   serializedVersion: 4
@@ -307,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 40
-  pointsValue: 1500
+  pointsValue: 1000
   spriteRenderer: {fileID: 0}
   dropItems: []
   soundManager: {fileID: 0}
@@ -341,3 +304,51 @@ MonoBehaviour:
   maxHealth: 100
   bossReference:
     healthBar: {fileID: 0}
+--- !u!60 &7484805894594207989
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336666241284782987}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.6, y: 9.6}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.5, y: -0.5}
+      - {x: 4, y: 1.7}
+      - {x: 4.8, y: 2.8}
+      - {x: 4.8, y: 3.8}
+      - {x: 4.3, y: 4.4}
+      - {x: 2.8, y: 4.4}
+      - {x: 0.4, y: 4}
+      - {x: -2.1000001, y: 1.9}
+      - {x: -3.2, y: 0.4}
+      - {x: -3.2, y: 0.1}
+      - {x: -2.9, y: 0}
+      - {x: -2.3, y: 0}
+      - {x: -0.5, y: -0.1}
+      - {x: -2.3, y: 0}
+      - {x: -2.9, y: 0}
+      - {x: -3.2, y: -0.3}
+      - {x: -3.2, y: -0.7}
+      - {x: 0.2, y: -3.8}
+      - {x: 2, y: -4.4}
+      - {x: 4.4, y: -4.4}
+      - {x: 4.8, y: -3.8}
+      - {x: 4.8, y: -2.7}
+      - {x: 3.9, y: -1.7}
