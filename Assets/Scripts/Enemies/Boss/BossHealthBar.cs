@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class BossHealthBar : MonoBehaviour
 {
-    public Slider slider;
+    public Image slider;
 
     private void Start()
     {
@@ -14,13 +14,12 @@ public class BossHealthBar : MonoBehaviour
 
     public void SetMaxHealth(int maxHealth)
     {
-        slider.maxValue = maxHealth;
-        slider.value = maxHealth;
+        slider.fillAmount = maxHealth;
     }
 
     public void SetHealth(int health)
     {
-        slider.value = health;
+        slider.fillAmount = health;
     }
 
     public void SetSliderActive(bool active)

@@ -10,7 +10,10 @@ public class BossReference
 
 public class Boss : MonoBehaviour
 {
-    public int maxHealth = 100;
+    [SerializeField]
+    private int maxHealth = 100;
+    
+    [SerializeField]
     private int currentHealth;
 
     public BossReference bossReference;
@@ -23,9 +26,9 @@ public class Boss : MonoBehaviour
 
         if (bossReference != null && bossReference.healthBar != null && bossReference.canvasManager != null)
         {
-            healthBar = bossReference.healthBar;
-            healthBar.SetMaxHealth(maxHealth);
-            healthBar.SetHealth(currentHealth);
+            //healthBar = bossReference.healthBar;
+            //healthBar.SetMaxHealth(maxHealth);
+            //healthBar.SetHealth(currentHealth);
 
             // Desactivar el objeto del Canvas al inicio
             bossReference.canvasManager.DeactivateBossCanvas();
@@ -33,30 +36,47 @@ public class Boss : MonoBehaviour
         else
         {
             Debug.LogWarning("La referencia a la barra de salud del jefe o al Canvas Manager no está configurada correctamente.");
+            
         }
     }
 
     void Update()
     {
-        // Puedes agregar lógica de actualización adicional para el jefe aquí
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
-    // Resto del código del jefe...
-
-    void Die()
+    private void Die()
     {
-        if (healthBar != null && bossReference.canvasManager != null)
+        Destroy(gameObject);
+    }
+
+    //void Die()
+    //{
+    //    if (healthBar != null && bossReference.canvasManager != null)
+    //    {
+    //        // Activar el objeto del Canvas cuando el jefe muere
+    //        bossReference.canvasManager.ActivateBossCanvas();
+
+    //        // Desactivar el slider cuando el jefe muere
+    //        healthBar.SetSliderActive(false);
+    //    }
+
+    //    // Puedes agregar cualquier lógica adicional cuando el jefe muere
+    //    // Por ejemplo, reproducir una animación, mostrar un mensaje, etc.
+
+    //    gameObject.SetActive(false);
+    //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Bullet bullet = collision.GetComponent<Bullet>();
+
+        if (bullet != null && currentHealth > 0)
         {
-            // Activar el objeto del Canvas cuando el jefe muere
-            bossReference.canvasManager.ActivateBossCanvas();
-
-            // Desactivar el slider cuando el jefe muere
-            healthBar.SetSliderActive(false);
+            currentHealth -= bullet.damage;
         }
-
-        // Puedes agregar cualquier lógica adicional cuando el jefe muere
-        // Por ejemplo, reproducir una animación, mostrar un mensaje, etc.
-
-        gameObject.SetActive(false);
     }
 }

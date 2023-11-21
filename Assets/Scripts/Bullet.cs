@@ -76,5 +76,9 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if (collision.CompareTag("EnemyShip"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
