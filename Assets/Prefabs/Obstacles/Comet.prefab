@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -137,9 +137,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.39527225, y: -0.089874506}
+  m_Offset: {x: 0.0013343692, y: -0.05298084}
   serializedVersion: 2
-  m_Radius: 0.6057131
+  m_Radius: 0.5411493
 --- !u!58 &-6090117985095977808
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -153,9 +153,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.37292814, y: -0.08336848}
+  m_Offset: {x: -0.00037956238, y: -0.02741599}
   serializedVersion: 2
-  m_Radius: 0.75589037
+  m_Radius: 0.71399665
 --- !u!114 &-7983014103550250655
 MonoBehaviour:
   m_ObjectHideFlags: 0
