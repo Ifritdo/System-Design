@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -6181612057738652084}
   - component: {fileID: -4744512072663975894}
   - component: {fileID: 2253645387570115736}
-  - component: {fileID: 4959898606671788489}
   - component: {fileID: 7159896811664095124}
+  - component: {fileID: 2122350147099560921}
   m_Layer: 0
   m_Name: EnemyType1
   m_TagString: EnemyShip
@@ -119,7 +119,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,38 +151,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &4959898606671788489
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6610409256095989831}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.1825994, y: -0.5290219}
-  - {x: -0.45596504, y: -0.40803576}
-  - {x: -0.7684002, y: -0.24809599}
-  - {x: -0.9103203, y: -0.010757874}
-  - {x: -0.7388096, y: 0.16965866}
-  - {x: -0.52815723, y: 0.2547946}
-  - {x: -0.015885454, y: 0.46742722}
-  - {x: 0.6982994, y: 0.777647}
-  - {x: 0.61721593, y: -0.024615746}
-  - {x: 0.7326021, y: -0.8524678}
-  - {x: 0.38506508, y: -0.7355621}
-  - {x: 0.059805557, y: -0.5412945}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &7159896811664095124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +170,29 @@ MonoBehaviour:
   - itemPrefab: {fileID: 4021852280281108660, guid: f188789751cd28d4d8a97f2b709ce06c, type: 3}
     dropProbability: 0.3
   soundManager: {fileID: 0}
+--- !u!61 &2122350147099560921
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6610409256095989831}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.073704004, y: -0.04020214}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7021525, y: 1.4659927}
+  m_EdgeRadius: 0

@@ -127,6 +127,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 956da706ce124a14690fa99513835f53, type: 3}
+    - target: {fileID: 2253645387570115736, guid: 54a1c98700b7eaa4997bc24c2f5e85c4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 4892774567905032818, guid: 54a1c98700b7eaa4997bc24c2f5e85c4, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -149,11 +153,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6874909872835829884, guid: 54a1c98700b7eaa4997bc24c2f5e85c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.530464
+      value: -1.2938588
       objectReference: {fileID: 0}
     - target: {fileID: 6874909872835829884, guid: 54a1c98700b7eaa4997bc24c2f5e85c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.8444858
+      value: -0.003329277
       objectReference: {fileID: 0}
     - target: {fileID: 6874909872835829884, guid: 54a1c98700b7eaa4997bc24c2f5e85c4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -226,8 +230,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6610409256095989831, guid: 54a1c98700b7eaa4997bc24c2f5e85c4, type: 3}
   m_PrefabInstance: {fileID: 2653490984734931066}
   m_PrefabAsset: {fileID: 0}
---- !u!68 &2057361759686042278
-EdgeCollider2D:
+--- !u!61 &7701503763706841777
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -236,27 +240,19 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.033501863, y: -0.013400614}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8361592, y: 1.1175743}
   m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.3097479, y: 0.029747486}
-  - {x: -0.85675716, y: 0.37810326}
-  - {x: -0.27040863, y: 0.33949327}
-  - {x: 0.17220497, y: 0.6227479}
-  - {x: -0.6090622, y: 0.66387415}
-  - {x: -0.20201206, y: 0.85172844}
-  - {x: 1.1887932, y: 0.8622589}
-  - {x: 1.1759272, y: -0.8622277}
-  - {x: -0.07159138, y: -0.84657097}
-  - {x: -0.5889597, y: -0.6959691}
-  - {x: 0.15115356, y: -0.65259075}
-  - {x: -0.098213196, y: -0.33923388}
-  - {x: -0.90355396, y: -0.3362341}
-  - {x: -1.3015687, y: 0.0256536}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
