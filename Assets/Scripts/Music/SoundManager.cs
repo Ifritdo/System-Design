@@ -21,7 +21,12 @@ public class AudioManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlaySound(AudioClip sonido)
+    public void PlaySoundHeal(AudioClip sonido)
+    {
+        audioSource.PlayOneShot(sonido);
+    }
+
+    public void PlaySoundExplosion(AudioClip sonido)
     {
         audioSource.PlayOneShot(sonido);
     }

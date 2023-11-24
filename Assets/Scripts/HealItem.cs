@@ -17,7 +17,7 @@ public class HealItem : MonoBehaviour
                 // Realiza cualquier lógica relacionada con el jugador aquí, por ejemplo, curación.
                 player.Heal(healAmount);
             }
-            AudioManager.Instance.PlaySound(soundheal);
+            AudioManager.Instance.PlaySoundHeal(soundheal);
             Destroy(gameObject); // Destruimos el ítem después de usarlo.
         }
     }
