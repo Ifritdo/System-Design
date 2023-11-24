@@ -19,17 +19,10 @@ public class Gun : MonoBehaviour
     private float shootTimer = 0f;
     private float delayTimer = 0f;
 
-    private AudioSource audioSource;
-
-    public AudioClip shotSound;
-
+    AudioSource audioShoot;
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
+        audioShoot = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -83,10 +76,10 @@ public class Gun : MonoBehaviour
         {
             bulletComponent.SetDirection(bulletDirection);  // Establece la dirección de la bala.
         }
-
-        if (audioSource != null && shotSound != null)
+        // Reproduce el sonido
+        if (audioShoot != null)
         {
-            audioSource.PlayOneShot(shotSound);
+            audioShoot.Play();
         }
     }
 }

@@ -2,19 +2,23 @@ using UnityEngine;
 
 public class HealItem : MonoBehaviour
 {
+    [SerializeField] private AudioClip soundheal;
     public int healAmount = 20; // La cantidad de salud que se restaurará.
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player")) // Asegúrate de que tu nave tenga la etiqueta "Player".
+        if (other.CompareTag("Player"))
         {
-            Player player = collision.gameObject.GetComponent<Player>();
+            
 
+            Player player = other.gameObject.GetComponent<Player>();
             if (player != null)
             {
-                player.Heal(healAmount); // Llamada al método Heal en el script de la nave.
-                Destroy(gameObject); // Destruimos el ítem de curación después de usarlo.
+                // Realiza cualquier lógica relacionada con el jugador aquí, por ejemplo, curación.
+                player.Heal(healAmount);
             }
+            AudioManager.Instance.PlaySound(soundheal);
+            Destroy(gameObject); // Destruimos el ítem después de usarlo.
         }
     }
 }

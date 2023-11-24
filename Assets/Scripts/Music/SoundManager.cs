@@ -1,23 +1,28 @@
 using UnityEngine;
-public class SoundManager : MonoBehaviour
-{
-    public AudioClip explosionSound;
+using System.Collections.Generic;
+using System.Collections;
 
+public class AudioManager : MonoBehaviour
+{
+    public static AudioManager Instance;
     private AudioSource audioSource;
 
-    void Start()
+    private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Modifica el método para aceptar un parámetro 'shouldPlay'
-    public void PlayExplosionSound(bool shouldPlay)
+    public void PlaySound(AudioClip sonido)
     {
-        Debug.Log($"Intentando reproducir sonido. shouldPlay: {shouldPlay}, AudioSource: {audioSource}");
-
-        if (shouldPlay && audioSource != null)
-        {
-            audioSource.PlayOneShot(explosionSound);
-        }
+        audioSource.PlayOneShot(sonido);
     }
 }

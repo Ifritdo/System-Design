@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3f0edb1d084f841b75f3dd8775bc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundheal: {fileID: 0}
   healAmount: 15
 --- !u!95 &2024937868593011814
 Animator:
