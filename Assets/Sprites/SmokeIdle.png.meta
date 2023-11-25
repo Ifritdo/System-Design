@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a24d8725f542dd448a4b1b5a015d3a97
+guid: c218d69e82a402d4b8c4681f41d24d18
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Explosion_0
+      name: Smoke15Frames_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 198
-        width: 52
-        height: 58
+        x: 37
+        y: 559
+        width: 172
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4ecf5d81af32af4d99a449ec5aa6af8
-      internalID: -806972766
+      spriteID: 3a96d92bdb5ea294b86f447c443ffbe0
+      internalID: 1669708449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_1
+      name: Smoke15Frames_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 194
-        width: 57
-        height: 61
+        x: 278
+        y: 556
+        width: 196
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,41 +140,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 941d6819bd0718544a45ef7bf05096bf
-      internalID: 1010351621
+      spriteID: 7dfde935b46af334383d1b52452691ab
+      internalID: 1526796307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_2
+      name: Smoke15Frames_2
       rect:
         serializedVersion: 2
-        x: 124
-        y: 194
-        width: 69
-        height: 61
+        x: 562
+        y: 581
+        width: 148
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 833442bc948b1b34cbd9c9043b400f54
-      internalID: -532142370
+      spriteID: ef684e966cc25984ca35243b0cc74ba0
+      internalID: -989026980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_3
+      name: Smoke15Frames_3
       rect:
         serializedVersion: 2
-        x: 193
-        y: 193
-        width: 63
-        height: 63
+        x: 791
+        y: 546
+        width: 185
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d06cff45f9a35bd4a9a3ad2efb57ccea
-      internalID: -59690005
+      spriteID: a63726d688034f34d9b523ad40491870
+      internalID: 1390881527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_4
+      name: Smoke15Frames_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 131
-        width: 63
-        height: 57
+        x: 1054
+        y: 549
+        width: 178
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e139433d16b4a3b4f8236568809074a2
-      internalID: -1879014356
+      spriteID: 63e4627ddd4f9bd4b80f459afae7e7d2
+      internalID: -496561613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_5
+      name: Smoke15Frames_6
       rect:
         serializedVersion: 2
-        x: 65
-        y: 131
-        width: 62
-        height: 58
+        x: 281
+        y: 297
+        width: 176
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02864fa4cd15c0d4781487ee7c761054
-      internalID: -1071265784
+      spriteID: 81d2c936f31882b4cba2a823191f920e
+      internalID: 1281592106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_6
+      name: Smoke15Frames_7
       rect:
         serializedVersion: 2
-        x: 130
-        y: 129
-        width: 56
-        height: 59
+        x: 560
+        y: 310
+        width: 141
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f12c1885cf14c4e49928399d4d9a88d9
-      internalID: 1061218598
+      spriteID: 25cbdb852f23f2a4ea76eb1df643f005
+      internalID: -693273295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_7
+      name: Smoke15Frames_8
       rect:
         serializedVersion: 2
-        x: 191
-        y: 129
-        width: 60
-        height: 58
+        x: 813
+        y: 306
+        width: 150
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce33d921a0db7d14c82e335730acdcaf
-      internalID: 1781579081
+      spriteID: ceea0d2227ddf2b4d8c9a9878ff9c765
+      internalID: 1187715079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_8
+      name: Smoke15Frames_9
       rect:
         serializedVersion: 2
-        x: 2
-        y: 68
-        width: 56
-        height: 54
+        x: 1072
+        y: 307
+        width: 144
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1d1a566764469d4b85230d481f943b6
-      internalID: -245681354
+      spriteID: fffcdefe729986f4e99ebd313d3317f5
+      internalID: 365983169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_9
+      name: Smoke15Frames_5
       rect:
         serializedVersion: 2
-        x: 68
-        y: 67
-        width: 54
-        height: 57
+        x: 19
+        y: 295
+        width: 189
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1071a3f23486837478d9dd4e9c097315
-      internalID: 2025708404
+      spriteID: b66d8bbc0c7ff0642a610c2ad088f51f
+      internalID: -100737344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_10
+      name: Smoke15Frames_10
       rect:
         serializedVersion: 2
-        x: 133
-        y: 68
-        width: 50
-        height: 55
+        x: 36
+        y: 46
+        width: 183
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,20 +329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c33239e5f72cc534d9245319ecb78c7b
-      internalID: 886704268
+      spriteID: d360eb2947569a24bb6bc023b91240b3
+      internalID: -1653238255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_11
+      name: Smoke15Frames_11
       rect:
         serializedVersion: 2
-        x: 198
-        y: 70
-        width: 48
-        height: 54
+        x: 296
+        y: 47
+        width: 170
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,20 +350,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f8217cbc91b38741bd884a498a4a579
-      internalID: 2028978858
+      spriteID: 3a7294cef9411d04c90638792ed03c62
+      internalID: -622556810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_12
+      name: Smoke15Frames_12
       rect:
         serializedVersion: 2
-        x: 11
-        y: 12
-        width: 38
-        height: 45
+        x: 557
+        y: 56
+        width: 156
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,20 +371,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f732fd63506100b419998646f244f6d3
-      internalID: -1224519284
+      spriteID: 2648a7794507f2846b1597659919011e
+      internalID: 1836637305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_13
+      name: Smoke15Frames_13
       rect:
         serializedVersion: 2
-        x: 84
-        y: 16
-        width: 29
-        height: 42
+        x: 810
+        y: 37
+        width: 174
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,20 +392,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 541c2992b5dc5c545bf8425cb7e2040f
-      internalID: 501202176
+      spriteID: 161743c9f175ca246977cd91b081ea9c
+      internalID: -375120473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion_14
+      name: Smoke15Frames_14
       rect:
         serializedVersion: 2
-        x: 141
-        y: 18
-        width: 35
-        height: 40
+        x: 1051
+        y: 17
+        width: 199
+        height: 206
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,29 +413,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e63a4d8fadd4f74984c967989fbcd69
-      internalID: -1483519572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Explosion_15
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 25
-        width: 27
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9e70a1174d7c844095f5fbb493a5b4e
-      internalID: 656121497
+      spriteID: 67168ee2fd721ac4dbb414782a395e6b
+      internalID: -429160206
       vertices: []
       indices: 
       edges: []
@@ -451,22 +430,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Explosion_6: 1061218598
-      Explosion_7: 1781579081
-      Explosion_13: 501202176
-      Explosion_14: -1483519572
-      Explosion_10: 886704268
-      Explosion_1: 1010351621
-      Explosion_4: -1879014356
-      Explosion_2: -532142370
-      Explosion_0: -806972766
-      Explosion_8: -245681354
-      Explosion_12: -1224519284
-      Explosion_5: -1071265784
-      Explosion_15: 656121497
-      Explosion_11: 2028978858
-      Explosion_3: -59690005
-      Explosion_9: 2025708404
+      Smoke15Frames_8: 1187715079
+      Smoke15Frames_0: 1669708449
+      Smoke15Frames_1: 1526796307
+      Smoke15Frames_6: 1281592106
+      Smoke15Frames_4: -496561613
+      Smoke15Frames_12: 1836637305
+      Smoke15Frames_7: -693273295
+      Smoke15Frames_9: 365983169
+      Smoke15Frames_14: -429160206
+      Smoke15Frames_5: -100737344
+      Smoke15Frames_13: -375120473
+      Smoke15Frames_10: -1653238255
+      Smoke15Frames_11: -622556810
+      Smoke15Frames_2: -989026980
+      Smoke15Frames_3: 1390881527
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

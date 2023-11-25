@@ -27,9 +27,12 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(health);
         guns = transform.GetComponentsInChildren<Gun>();
 
-        fireAnimator = transform.Find("FireAnimation").GetComponent<Animator>();  // Inicializamos la referencia al Animator del objeto hijo.
-        hitAnimation = transform.Find("GetHit").GetComponent<PlayerHitAnimation>();  // Inicializamos la referencia al nuevo script de animación de golpe.
-        hitAnimation.gameObject.SetActive(false);  // Aseguramos que la animación de golpe esté desactivada al inicio.
+        // Ajusta el nombre del objeto hijo que representa el fuego.
+        Transform fireObject = transform.Find("FireAnimation");
+        fireAnimator = fireObject != null ? fireObject.GetComponent<Animator>() : null;
+
+        hitAnimation = transform.Find("GetHit").GetComponent<PlayerHitAnimation>();
+        hitAnimation.gameObject.SetActive(false);
     }
 
     void Update()
@@ -56,6 +59,20 @@ public class Player : MonoBehaviour
             foreach (Gun gun in guns)
             {
                 gun.Shoot();
+            }
+        }
+
+        if (fireAnimator != null)
+        {
+            fireAnimator.SetBool("isMoving", moveUp || moveDown || moveLeft || moveRight);
+
+            if (!(moveUp || moveDown || moveLeft || moveRight))
+            {
+                fireAnimator.SetBool("isMoving", true);  // Si no se está moviendo, activa la animación de fuego.
+            }
+            else
+            {
+                fireAnimator.SetBool("isMoving", false);  // Si se está moviendo, desactiva la animación de fuego.
             }
         }
 
@@ -130,7 +147,7 @@ public class Player : MonoBehaviour
                 return;
             }
         }
-        
+
         //if (collision.CompareTag("EnemyShip"))
         //{
         //    Enemy enemyShip = collision.gameObject.GetComponent<Enemy>();
