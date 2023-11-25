@@ -29,7 +29,16 @@ public class Player : MonoBehaviour
 
         // Ajusta el nombre del objeto hijo que representa el fuego.
         Transform fireObject = transform.Find("FireAnimation");
-        fireAnimator = fireObject != null ? fireObject.GetComponent<Animator>() : null;
+
+        // Verificamos si el objeto FireAnimation existe antes de intentar obtener el Animator.
+        if (fireObject != null)
+        {
+            fireAnimator = fireObject.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.LogError("No se encontró el objeto FireAnimation.");
+        }
 
         hitAnimation = transform.Find("GetHit").GetComponent<PlayerHitAnimation>();
         hitAnimation.gameObject.SetActive(false);
@@ -64,20 +73,20 @@ public class Player : MonoBehaviour
 
         if (fireAnimator != null)
         {
-            fireAnimator.SetBool("isMoving", moveUp || moveDown || moveLeft || moveRight);
+            fireAnimator.SetBool("IsMoving", moveUp || moveDown || moveLeft || moveRight);
 
             if (!(moveUp || moveDown || moveLeft || moveRight))
             {
-                fireAnimator.SetBool("isMoving", true);  // Si no se está moviendo, activa la animación de fuego.
+                fireAnimator.SetBool("IsIdle", true);  // Si no se está moviendo, activa la animación de fuego.
             }
             else
             {
-                fireAnimator.SetBool("isMoving", false);  // Si se está moviendo, desactiva la animación de fuego.
+                fireAnimator.SetBool("IsIdle", false);  // Si se está moviendo, desactiva la animación de fuego.
             }
         }
 
         // Actualizamos el Animator basándonos en si el jugador está presionando Shift.
-        fireAnimator.SetBool("isMovingFast", speedUp);
+        fireAnimator.SetBool("IsMovingFast", speedUp);
     }
 
     void FixedUpdate()
