@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -6955154991244009397}
   - component: {fileID: 2024937868593011814}
   - component: {fileID: 8962428984275389314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealItem
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3f0edb1d084f841b75f3dd8775bc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundheal: {fileID: 0}
+  soundheal: {fileID: 8300000, guid: 93299c51341b7a44d87079dbb6a83cdb, type: 3}
   healAmount: 15
 --- !u!95 &2024937868593011814
 Animator:
