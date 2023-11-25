@@ -3,22 +3,22 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float maxTime = 300.0f; // Tiempo máximo en segundos (5 minutos por defecto).
-    public TMP_Text timerText;    // Enlaza el objeto de texto Mesh Pro para mostrar el temporizador.
-
-    private float currentTime;     // Tiempo actual restante.
+    public float maxTime = 600.0f;  // Cambié el tiempo máximo a 10 minutos (600 segundos).
+    public TMP_Text timerText;
+    private float currentTime;
 
     private void Start()
     {
-        // Configura el tiempo actual al valor máximo desde el Inspector.
         currentTime = maxTime;
-        // Obtén una referencia al componente TMP_Text desde el Inspector.
         timerText = GetComponent<TMP_Text>();
+
+        // Invocar eventos al alcanzar la mitad y el final del tiempo
+        Invoke("InvokeOnTimeReachedHalfway", 2f);  // Invocar después de 2 segundos.
+        Invoke("InvokeOnTimeReachedEnd", 480f);    // Invocar después de 480 segundos (8 minutos).
     }
 
     private void Update()
     {
-        // Actualiza el temporizador.
         if (currentTime > 0)
         {
             currentTime -= Time.deltaTime;
@@ -26,16 +26,26 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            // Si el tiempo llega a 0, puedes realizar una acción aquí, como cargar una escena de derrota.
             Debug.Log("Tiempo agotado");
+            // También puedes disparar un evento aquí si lo prefieres.
         }
     }
 
     private void UpdateTimerText()
     {
-        // Actualiza el texto del temporizador para mostrar minutos y segundos.
         int minutes = Mathf.FloorToInt(currentTime / 60);
         int seconds = Mathf.FloorToInt(currentTime % 60);
         timerText.text = string.Format("Tiempo: {0:00}:{1:00}", minutes, seconds);
+    }
+
+    // Métodos para invocar eventos
+    private void InvokeOnTimeReachedHalfway()
+    {
+        GameEvents.OnTimeReachedHalfway.Invoke();
+    }
+
+    private void InvokeOnTimeReachedEnd()
+    {
+        GameEvents.OnTimeReachedEnd.Invoke();
     }
 }
