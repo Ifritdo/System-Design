@@ -3,8 +3,13 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float maxTime = 600.0f;  // Cambié el tiempo máximo a 10 minutos (600 segundos).
+    public float maxTime = 600.0f;
     public TMP_Text timerText;
+
+    public delegate void TimeEvent(string message);
+    public static event TimeEvent MessageOne = delegate { };
+    public static event TimeEvent MessageTwo = delegate { };
+
     private float currentTime;
 
     private void Start()
@@ -12,9 +17,9 @@ public class Timer : MonoBehaviour
         currentTime = maxTime;
         timerText = GetComponent<TMP_Text>();
 
-        // Invocar eventos al alcanzar la mitad y el final del tiempo
-        Invoke("InvokeOnTimeReachedHalfway", 2f);  // Invocar después de 2 segundos.
-        Invoke("InvokeOnTimeReachedEnd", 480f);    // Invocar después de 480 segundos (8 minutos).
+        // Invocar eventos
+        Invoke("InvokeMessageOne", 2f);  // Invocar después de 2 segundos.
+        Invoke("InvokeMessageTwo", 480f);    // Invocar después de 480 segundos (8 minutos).
     }
 
     private void Update()
@@ -39,13 +44,13 @@ public class Timer : MonoBehaviour
     }
 
     // Métodos para invocar eventos
-    private void InvokeOnTimeReachedHalfway()
+    private void InvokeMessageOne()
     {
-        GameEvents.OnTimeReachedHalfway.Invoke();
+        MessageOne.Invoke("Preparado para el ataque, destruye a los enemigos");
     }
 
-    private void InvokeOnTimeReachedEnd()
+    private void InvokeMessageTwo()
     {
-        GameEvents.OnTimeReachedEnd.Invoke();
+        MessageTwo.Invoke("Ya casi lo logras. En dos minutos terminará el ataque");
     }
 }

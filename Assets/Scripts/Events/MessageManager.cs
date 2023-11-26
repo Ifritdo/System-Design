@@ -3,52 +3,44 @@ using TMPro;
 
 public class MessageManager : MonoBehaviour
 {
-    public TMP_Text halfwayMessageText;
-    public TMP_Text endMessageText;
+    public TMP_Text MessageOneText;
+    public TMP_Text MessageTwoText;
 
     private void OnEnable()
     {
-        // Suscribe los métodos a los eventos
-        GameEvents.OnTimeReachedHalfway.AddListener(ShowHalfwayMessage);
-        GameEvents.OnTimeReachedEnd.AddListener(ShowEndMessage);
+        Timer.MessageOne += ShowMessageOne;
+        Timer.MessageTwo += ShowMessageTwo;
     }
 
     private void OnDisable()
     {
-        // Desuscribe los métodos de los eventos cuando el objeto se desactiva o se destruye
-        GameEvents.OnTimeReachedHalfway.RemoveListener(ShowHalfwayMessage);
-        GameEvents.OnTimeReachedEnd.RemoveListener(ShowEndMessage);
+        Timer.MessageOne -= ShowMessageOne;
+        Timer.MessageTwo -= ShowMessageTwo;
     }
 
-    private void ShowHalfwayMessage()
+    private void ShowMessageOne(string message)
     {
-        // Activa el objeto de texto y establece el mensaje
-        halfwayMessageText.gameObject.SetActive(true);
-        halfwayMessageText.text = "Preparado para el ataque, destruye a los enemigos";
-
-        // Desactiva el objeto de texto después de 2 segundos
-        Invoke("HideHalfwayMessage", 2f);
+        // Mostrar el mensaje de la mitad del tiempo.
+        MessageOneText.gameObject.SetActive(true);
+        MessageOneText.text = message;
+        Invoke("HideMessageOne", 2f);  // Ocultar después de 2 segundos.
     }
 
-    private void ShowEndMessage()
+    private void HideMessageOne()
     {
-        // Activa el objeto de texto y establece el mensaje
-        endMessageText.gameObject.SetActive(true);
-        endMessageText.text = "Ya casi lo logras. En dos minutos terminará el ataque";
-
-        // Desactiva el objeto de texto después de 2 segundos
-        Invoke("HideEndMessage", 2f);
+        MessageOneText.gameObject.SetActive(false);
     }
 
-    private void HideHalfwayMessage()
+    private void ShowMessageTwo(string message)
     {
-        // Desactiva el objeto de texto
-        halfwayMessageText.gameObject.SetActive(false);
+        // Mostrar el mensaje al final del tiempo.
+        MessageTwoText.gameObject.SetActive(true);
+        MessageTwoText.text = message;
+        Invoke("HideMessageTwo", 2f);  // Ocultar después de 2 segundos.
     }
 
-    private void HideEndMessage()
+    private void HideMessageTwo()
     {
-        // Desactiva el objeto de texto
-        endMessageText.gameObject.SetActive(false);
+        MessageTwoText.gameObject.SetActive(false);
     }
 }
