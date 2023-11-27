@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 400e33884b15eb34f930a653326b0d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 400
   currentHealth: 0
   bossReference:
     canvasManager: {fileID: 0}

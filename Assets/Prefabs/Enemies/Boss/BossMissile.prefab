@@ -134,13 +134,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9b7ce9095529c4fb4b6d0798f002ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 20
   pointsValue: 0
   bombSpeed: 3
   explosionPrefab: {fileID: 5223937910266822972, guid: a23ebcf1dccac6c4caa723484ca6c11e, type: 3}
   dropItems: []
   explosionProjectile: {fileID: 3818498135123890677, guid: c9b3f71c0c3599a4b8a1cf40f9042c9f, type: 3}
-  numberOfProjectiles: 6
+  numberOfProjectiles: 12
   explosionForce: 8
 --- !u!114 &-6643495398750525626
 MonoBehaviour:
