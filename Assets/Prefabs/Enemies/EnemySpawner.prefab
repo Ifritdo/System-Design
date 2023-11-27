@@ -105,4 +105,4 @@ MonoBehaviour:
   - {fileID: 6963266208881446251, guid: ec132be70a7f5d9419e80398b9727c63, type: 3}
   - {fileID: 6020742100806671534, guid: 2d508260f27f0044186a3f894e31d550, type: 3}
   spawnInterval: 2
-  spawnRange: {x: 5, y: 5}
+  spawnRange: {x: 3, y: 3}
