@@ -1557,6 +1557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
+  originalX: 0
 --- !u!95 &891709033
 Animator:
   serializedVersion: 5
@@ -2204,7 +2205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4401a3c2538c894dbd642428e5ba52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 0.5
   bgRenderer: {fileID: 1546207573}
 --- !u!1 &1597406963
 GameObject:
