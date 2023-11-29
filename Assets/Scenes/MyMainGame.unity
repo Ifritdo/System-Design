@@ -795,7 +795,7 @@ MonoBehaviour:
   m_Intensity: 0.8
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: fffba38c00000000f58625f3a170c0b45320d179cb941af15b1e1426
+  m_ApplyToSortingLayers: fffba38c00000000a170c0b45b1e1426
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2179,10 +2179,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1935410177
-  m_SortingLayer: -1
+  m_SortingLayerID: -215644427
+  m_SortingLayer: 1
   m_SortingOrder: 17
-  m_Sprite: {fileID: 21300000, guid: e4516f278fcd54d1e981e1c1d1d828b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6b93f33a87ae6e41805531b81477a60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2205,7 +2205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4401a3c2538c894dbd642428e5ba52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.1
   bgRenderer: {fileID: 1546207573}
 --- !u!1 &1597406963
 GameObject:
