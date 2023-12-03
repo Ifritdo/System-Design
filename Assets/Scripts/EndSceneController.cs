@@ -29,6 +29,11 @@ public class EndSceneController : MonoBehaviour
         // Carga el menú principal directamente.
         sceneController.LoadScene("MainMenu");
     }
+    public void OnSpaceStationButtonClicked()
+    {
+        // Carga la escena ChooseLevel al presionar el botón Space Station.
+        sceneController.LoadScene("ChooseLevel");
+    }
 
     public void OnExitButtonClicked()
     {
