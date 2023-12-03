@@ -1,7 +1,55 @@
 fileFormatVersion: 2
-guid: e411ffbaedac8d248a28c493b8d8fff2
+guid: 23748c298f885bf4c89671f6d30f562b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6598946016331564889
+    second: Down 0
+  - first:
+      213: -7675304248189546062
+    second: Down 1
+  - first:
+      213: -6388338761078672736
+    second: Down 2
+  - first:
+      213: -303320121775701381
+    second: Down 3
+  - first:
+      213: 7043811978007918041
+    second: Up 0
+  - first:
+      213: -7723253972256136601
+    second: Up 1
+  - first:
+      213: -1137364592071911362
+    second: Up 2
+  - first:
+      213: -3549988229105279555
+    second: Up 3
+  - first:
+      213: 2249745419088220813
+    second: Right 0
+  - first:
+      213: 5333771517180107481
+    second: Right 1
+  - first:
+      213: -646623592477257922
+    second: Right 2
+  - first:
+      213: 5856893256139009897
+    second: Right 3
+  - first:
+      213: 3729461876300729580
+    second: Left 0
+  - first:
+      213: -672529477206987394
+    second: Left 1
+  - first:
+      213: 5629586733242638167
+    second: Left 2
+  - first:
+      213: 7767812757204367948
+    second: Left 3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -38,7 +86,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -47,7 +95,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,14 +111,14 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -79,10 +127,34 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,10 +163,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,11 +177,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Astronaut-Sheet_0
+      name: Down 0
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 51
         width: 16
         height: 16
       alignment: 0
@@ -119,18 +191,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64a50c9688eac90478ee28a5f60ef551
-      internalID: -1518427430
+      spriteID: 7a8f3949f85db64a0800000000000000
+      internalID: -6598946016331564889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_1
+      name: Down 1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 17
+        y: 51
         width: 16
         height: 16
       alignment: 0
@@ -140,18 +212,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26cde8af405d5be4a8bf9dcdb4fe8caa
-      internalID: -1239958473
+      spriteID: 2b19d97a377db7590800000000000000
+      internalID: -7675304248189546062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_2
+      name: Down 2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 34
+        y: 51
         width: 16
         height: 16
       alignment: 0
@@ -161,18 +233,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6930b780f7615e4c9bf2b3a135aef87
-      internalID: -880866786
+      spriteID: 0a2fb016ebf0857a0800000000000000
+      internalID: -6388338761078672736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_3
+      name: Down 3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 51
+        y: 51
         width: 16
         height: 16
       alignment: 0
@@ -182,18 +254,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d310c6438787bab498ae1c72a7d7278e
-      internalID: 457964910
+      spriteID: b72c450d4f36acbf0800000000000000
+      internalID: -303320121775701381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_4
+      name: Up 0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 34
         width: 16
         height: 16
       alignment: 0
@@ -203,18 +275,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b104919a2e1312479577218d78d0a16
-      internalID: 330958923
+      spriteID: 9d5bdcd9ca5a0c160800000000000000
+      internalID: 7043811978007918041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_5
+      name: Up 1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 17
+        y: 34
         width: 16
         height: 16
       alignment: 0
@@ -224,18 +296,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6b44f5741d43514080a2b16ab862789
-      internalID: -1742603233
+      spriteID: 7626c898e6d71d490800000000000000
+      internalID: -7723253972256136601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_6
+      name: Up 2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 34
+        y: 34
         width: 16
         height: 16
       alignment: 0
@@ -245,18 +317,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9fac0beb5f68974f8cf4d108b92193a
-      internalID: 1832245897
+      spriteID: e385275fde44730f0800000000000000
+      internalID: -1137364592071911362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_7
+      name: Up 3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 51
+        y: 34
         width: 16
         height: 16
       alignment: 0
@@ -266,18 +338,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: affcb1ebb7e18e24f834e144829a1193
-      internalID: 556776666
+      spriteID: dbd9c57a388ebbec0800000000000000
+      internalID: -3549988229105279555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_8
+      name: Right 0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 0
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -287,18 +359,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c04235400271049bfa263532f2e30c
-      internalID: -1194601147
+      spriteID: d82d0dbf983b83f10800000000000000
+      internalID: 2249745419088220813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_9
+      name: Right 1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
+        x: 17
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -308,18 +380,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f3fc9b8030d07243a22fbe8fe74d617
-      internalID: 1988094164
+      spriteID: 9dadd927fec550a40800000000000000
+      internalID: 5333771517180107481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_10
+      name: Right 2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 34
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -329,18 +401,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f7467cbed37af940893afc7e1701dc0
-      internalID: 33245381
+      spriteID: e3f8103c44bb607f0800000000000000
+      internalID: -646623592477257922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_11
+      name: Right 3
       rect:
         serializedVersion: 2
-        x: 112
-        y: 32
+        x: 51
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -350,18 +422,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9900de5ccd1f4d8429f3d3baed4c9b9e
-      internalID: -1716600907
+      spriteID: 96feb83a26dd74150800000000000000
+      internalID: 5856893256139009897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_12
+      name: Left 0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -371,18 +443,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49bf362c557e96b49b714b3d36e0e92a
-      internalID: 2142340151
+      spriteID: cec444421d5b1c330800000000000000
+      internalID: 3729461876300729580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_13
+      name: Left 1
       rect:
         serializedVersion: 2
-        x: 144
-        y: 32
+        x: 17
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -392,18 +464,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfa740c02c47b6443a861494bf2d5a1d
-      internalID: -1421658262
+      spriteID: e7d2912f002baa6f0800000000000000
+      internalID: -672529477206987394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_14
+      name: Left 2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
+        x: 34
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -413,18 +485,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73c551d5ba3dbe94699a0ea9a6e392da
-      internalID: -1096612076
+      spriteID: 75fdd2b9e4f402e40800000000000000
+      internalID: 5629586733242638167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut-Sheet_15
+      name: Left 3
       rect:
         serializedVersion: 2
-        x: 176
-        y: 32
+        x: 51
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -434,50 +506,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b80db73c52113647b1a72f64484d279
-      internalID: 580603181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astronaut-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8aee1b7e0af9094479fd368392b124f1
-      internalID: -261026374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astronaut-Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f69d5e85b1ddefb41b71a6bb3ca3ad59
-      internalID: -1810786026
+      spriteID: c4af9ea0c80dccb60800000000000000
+      internalID: 7767812757204367948
       vertices: []
       indices: 
       edges: []
@@ -485,7 +515,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: b1a9826be165c5747b2da07821c1250b
     internalID: 0
     vertices: []
     indices: 
@@ -493,40 +523,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Astronaut-Sheet_20: 1248411622
-      Astronaut-Sheet_2: -880866786
-      Astronaut-Sheet_11: -1716600907
-      Astronaut-Sheet_31: -1222010139
-      Astronaut-Sheet_14: -1096612076
-      Astronaut-Sheet_18: -1482933187
-      Astronaut-Sheet_6: 1832245897
-      Astronaut-Sheet_16: -261026374
-      Astronaut-Sheet_29: 526951756
-      Astronaut-Sheet_33: 19682206
-      Astronaut-Sheet_30: -1322402421
-      Astronaut-Sheet_12: 2142340151
-      Astronaut-Sheet_4: 330958923
-      Astronaut-Sheet_19: 1689330678
-      Astronaut-Sheet_17: -1810786026
-      Astronaut-Sheet_21: 44243807
-      Astronaut-Sheet_24: 1141218519
-      Astronaut-Sheet_25: 605741918
-      Astronaut-Sheet_13: -1421658262
-      Astronaut-Sheet_22: -1407361881
-      Astronaut-Sheet_9: 1988094164
-      Astronaut-Sheet_10: 33245381
-      Astronaut-Sheet_23: 1968539162
-      Astronaut-Sheet_8: -1194601147
-      Astronaut-Sheet_15: 580603181
-      Astronaut-Sheet_1: -1239958473
-      Astronaut-Sheet_3: 457964910
-      Astronaut-Sheet_5: -1742603233
-      Astronaut-Sheet_7: 556776666
-      Astronaut-Sheet_26: -303931898
-      Astronaut-Sheet_28: -2035403953
-      Astronaut-Sheet_32: -2121601898
-      Astronaut-Sheet_27: 692179531
-      Astronaut-Sheet_0: -1518427430
+      Down 2: -6388338761078672736
+      Left 1: -672529477206987394
+      Up 0: 7043811978007918041
+      Right 3: 5856893256139009897
+      Left 0: 3729461876300729580
+      Up 2: -1137364592071911362
+      Left 3: 7767812757204367948
+      Down 1: -7675304248189546062
+      Down 0: -6598946016331564889
+      Down 3: -303320121775701381
+      Right 0: 2249745419088220813
+      Up 3: -3549988229105279555
+      Right 1: 5333771517180107481
+      Left 2: 5629586733242638167
+      Right 2: -646623592477257922
+      Up 1: -7723253972256136601
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
