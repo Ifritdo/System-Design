@@ -1,19 +1,27 @@
-// EndSceneController.cs
 using UnityEngine;
 
 public class EndSceneController : MonoBehaviour
 {
     public SceneController sceneController;
+    private string lastPlayedScene;
 
     private void Start()
     {
         sceneController = FindObjectOfType<SceneController>();
+        // Recupera la última escena jugada almacenada en PlayerPrefs.
+        lastPlayedScene = PlayerPrefs.GetString("LastPlayedScene", "MainMenu");
     }
 
     public void OnReplayButtonClicked()
     {
-        // Carga la escena principal directamente.
-        sceneController.LoadScene("MyMainGame");
+        if (!string.IsNullOrEmpty(lastPlayedScene) && sceneController != null)
+        {
+            sceneController.LoadScene(lastPlayedScene);
+        }
+        else
+        {
+            Debug.LogError("Error al cargar la última escena jugada.");
+        }
     }
 
     public void OnMainMenuButtonClicked()

@@ -1,6 +1,4 @@
-// MainMenuController.cs
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -15,8 +13,8 @@ public class MainMenuController : MonoBehaviour
     {
         Debug.Log("OnPlayButtonClicked");
         // Configura la próxima escena antes de cargar la escena principal.
-        PlayerPrefs.SetString("NextScene", "MyMainGame");
-        sceneController.LoadScene("MyMainGame");
+        PlayerPrefs.SetString("NextScene", "ChooseLevel");
+        sceneController.LoadScene("ChooseLevel");
     }
 
     public void OnExitButtonClicked()
