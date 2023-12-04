@@ -131,8 +131,6 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"La nave ha colisionado con: {collision.gameObject.name} con el tag {collision.gameObject.tag}");
-
         // Ignoramos las balas del jugador
         if (collision.CompareTag("PlayerBullet"))
         {

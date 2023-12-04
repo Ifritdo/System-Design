@@ -3,25 +3,18 @@ using UnityEngine;
 public class EndSceneController : MonoBehaviour
 {
     public SceneController sceneController;
-    private string lastPlayedScene;
 
     private void Start()
     {
-        sceneController = FindObjectOfType<SceneController>();
-        // Recupera la última escena jugada almacenada en PlayerPrefs.
-        lastPlayedScene = PlayerPrefs.GetString("LastPlayedScene", "MainMenu");
+        // Puedes obtener la última escena jugada desde el SceneController.
+        string lastPlayedScene = sceneController.LastPlayedScene;
+        Debug.Log($"Last Played Scene: {lastPlayedScene}");
     }
 
     public void OnReplayButtonClicked()
     {
-        if (!string.IsNullOrEmpty(lastPlayedScene) && sceneController != null)
-        {
-            sceneController.LoadScene(lastPlayedScene);
-        }
-        else
-        {
-            Debug.LogError("Error al cargar la última escena jugada.");
-        }
+        // Carga la última escena jugada almacenada en el SceneController.
+        sceneController.LoadScene(sceneController.LastPlayedScene);
     }
 
     public void OnMainMenuButtonClicked()
@@ -29,6 +22,7 @@ public class EndSceneController : MonoBehaviour
         // Carga el menú principal directamente.
         sceneController.LoadScene("MainMenu");
     }
+
     public void OnSpaceStationButtonClicked()
     {
         // Carga la escena ChooseLevel al presionar el botón Space Station.

@@ -36,7 +36,6 @@ public class EnemyRaycaster : MonoBehaviour
         float dot = Vector2.Dot(enemyForward, directionToPlayer.normalized);
 
         // Debug para visualizar el valor del producto punto.
-        Debug.Log("Dot value: " + dot);
 
         // Si dot es positivo, el jugador está en frente del enemigo.
         if (dot > 0.5f) // Ajusta este valor basándote en tus observaciones.

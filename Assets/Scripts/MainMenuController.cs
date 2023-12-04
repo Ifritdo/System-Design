@@ -11,7 +11,6 @@ public class MainMenuController : MonoBehaviour
 
     public void OnPlayButtonClicked()
     {
-        Debug.Log("OnPlayButtonClicked");
         // Configura la próxima escena antes de cargar la escena principal.
         PlayerPrefs.SetString("NextScene", "ChooseLevel");
         sceneController.LoadScene("ChooseLevel");
