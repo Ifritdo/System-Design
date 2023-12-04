@@ -10,6 +10,9 @@ public class Timer : MonoBehaviour
     public static event TimeEvent MessageOne = delegate { };
     public static event TimeEvent MessageTwo = delegate { };
 
+    [SerializeField]
+    private float messageTwoInvokeTime = 480f;
+
     private float currentTime;
 
     private void Start()
@@ -19,7 +22,7 @@ public class Timer : MonoBehaviour
 
         // Invocar eventos
         Invoke("InvokeMessageOne", 2f);  // Invocar después de 2 segundos.
-        Invoke("InvokeMessageTwo", 480f);    // Invocar después de 480 segundos (8 minutos).
+        Invoke("InvokeMessageTwo", messageTwoInvokeTime);    // Usar el tiempo definido desde el Inspector.
     }
 
     private void Update()

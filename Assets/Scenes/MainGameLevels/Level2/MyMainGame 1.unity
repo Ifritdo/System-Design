@@ -271,8 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8085a06c70c9b9045a2858c45844f1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 600
+  maxTime: 300
   timerText: {fileID: 167484640}
+  messageTwoInvokeTime: 180
 --- !u!1 &223864973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,7 +2284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerShip: {fileID: 1192116933}
-  maxTime: 600
+  maxTime: 300
   victorySceneName: EndSceneV
   defeatSceneName: EndSceneD
   sceneController: {fileID: 782546564}
@@ -2727,6 +2728,10 @@ PrefabInstance:
       propertyPath: enemySpawner
       value: 
       objectReference: {fileID: 1326663729}
+    - target: {fileID: 2185294080685856951, guid: ceb5ddcd8f8db874eaf51966d03c31bb, type: 3}
+      propertyPath: timeToSpawnBoss
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceb5ddcd8f8db874eaf51966d03c31bb, type: 3}
 --- !u!1001 &8882851292420493663
