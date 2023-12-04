@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6963266208881446244}
   - component: {fileID: 6963266208881446245}
   - component: {fileID: 6963266208881446250}
+  - component: {fileID: -8323907856474819685}
   m_Layer: 0
   m_Name: EnemyBomb
   m_TagString: EnemyShip
@@ -150,10 +151,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  pointsValue: 25
+  pointsValue: 0
   bombSpeed: 4
   explosionPrefab: {fileID: 5223937910266822972, guid: a23ebcf1dccac6c4caa723484ca6c11e, type: 3}
   dropItems: []
   explosionProjectile: {fileID: 3818498135123890677, guid: c9b3f71c0c3599a4b8a1cf40f9042c9f, type: 3}
   numberOfProjectiles: 12
   explosionForce: 8
+--- !u!114 &-8323907856474819685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6963266208881446251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0760eac16edae49b0d8ccfcf822051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  pointsValue: 25
+  spriteRenderer: {fileID: 0}
+  dropItems: []
+  soundManager: {fileID: 0}
