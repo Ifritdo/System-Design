@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Astronaut : MonoBehaviour
 {
@@ -32,5 +33,39 @@ public class Astronaut : MonoBehaviour
 
         // Configurar los parámetros del Animator
         astronautAnimator.SetBool("IsMoving", isMoving);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Computer"))
+        {
+            string sceneToLoad = GetSceneNameFromCollider(other);
+            if (!string.IsNullOrEmpty(sceneToLoad))
+            {
+                SceneManager.LoadScene(sceneToLoad);
+            }
+        }
+    }
+
+    private string GetSceneNameFromCollider(Collider2D collider)
+    {
+        // Lógica para determinar la escena basada en el collider
+        // Puedes implementar la lógica específica de tu juego aquí
+        // Devuelve el nombre de la escena a cargar
+
+        if (collider.gameObject.name == "LevelAcces1")
+        {
+            return "MyMainGame";
+        }
+        else if (collider.gameObject.name == "LevelAcces2")
+        {
+            return "MyMainGame1";
+        }
+        else if (collider.gameObject.name == "LevelAcces3")
+        {
+            return "MyMainGame2";
+        }
+
+        return null;  // Devuelve null si no se encuentra una escena correspondiente
     }
 }

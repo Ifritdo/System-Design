@@ -54,6 +54,6 @@ public class Timer : MonoBehaviour
 
     private void InvokeMessageTwo()
     {
-        MessageTwo.Invoke("Ya casi lo logras. En dos minutos terminará el ataque");
+        MessageTwo.Invoke("Ya casi lo logras. Pronto terminará el ataque");
     }
 }

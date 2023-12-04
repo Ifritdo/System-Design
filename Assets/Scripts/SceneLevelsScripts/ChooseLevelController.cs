@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChooseLevelController : MonoBehaviour
 {
     public SceneController sceneController;
     public GameObject confirmationPanel;
-    public Text confirmationText;
+    public TextMeshProUGUI confirmationText;
 
     private string selectedLevel;
 

@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class ComputerController : MonoBehaviour
@@ -42,7 +41,7 @@ public class ComputerController : MonoBehaviour
         }
     }
 
-    private void ShowConfirmationPanel()
+    public void ShowConfirmationPanel()
     {
         // Obtén el nombre del objeto actual.
         string currentObjectName = gameObject.name;
@@ -59,7 +58,7 @@ public class ComputerController : MonoBehaviour
         }
     }
 
-    private void HideConfirmationPanel()
+    public void HideConfirmationPanel()
     {
         confirmationPanel.SetActive(false);
     }
@@ -90,4 +89,3 @@ public class ComputerController : MonoBehaviour
         correspondingScene = sceneName;
     }
 }
-
