@@ -1,17 +1,29 @@
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ComputerController : MonoBehaviour
 {
     public GameObject confirmationPanel;
-    public Text confirmationText;
-    public SceneController sceneController;  // Agrega un campo para SceneController
+    public TextMeshProUGUI confirmationText;
+    public SceneController sceneController;
 
     private string correspondingScene;
+    private Dictionary<string, string> computerMessages;
 
     private void Start()
     {
         confirmationPanel.SetActive(false);
+        InitializeMessages();
+    }
+
+    private void InitializeMessages()
+    {
+        computerMessages = new Dictionary<string, string>();
+        computerMessages["LevelAcces1"] = "Estás por acceder a la simulación de prueba, nivel de dificultad 1. ¿Quieres acceder?";
+        computerMessages["LevelAcces2"] = "Estás por acceder a la simulación de prueba, nivel de dificultad 2. ¿Quieres acceder?";
+        computerMessages["LevelAcces3"] = "Estás por acceder a la simulación de prueba, nivel de dificultad 3. ¿Quieres acceder?";
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -32,7 +44,19 @@ public class ComputerController : MonoBehaviour
 
     private void ShowConfirmationPanel()
     {
-        confirmationPanel.SetActive(true);
+        // Obtén el nombre del objeto actual.
+        string currentObjectName = gameObject.name;
+
+        // Verifica si el objeto actual tiene un mensaje asociado.
+        if (computerMessages.ContainsKey(currentObjectName))
+        {
+            confirmationText.text = computerMessages[currentObjectName];
+            confirmationPanel.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError($"No se encontró un mensaje para el objeto {currentObjectName} en ComputerController.");
+        }
     }
 
     private void HideConfirmationPanel()
@@ -64,6 +88,6 @@ public class ComputerController : MonoBehaviour
     public void SetCorrespondingScene(string sceneName)
     {
         correspondingScene = sceneName;
-        confirmationText.text = $"Estás por acceder a la simulación de prueba, nivel de dificultad {sceneName.Substring(sceneName.Length - 1)}. ¿Quieres acceder?";
     }
 }
+
