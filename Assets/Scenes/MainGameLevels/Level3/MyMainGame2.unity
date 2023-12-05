@@ -2728,7 +2728,7 @@ PrefabInstance:
       objectReference: {fileID: 1326663729}
     - target: {fileID: 2185294080685856951, guid: ceb5ddcd8f8db874eaf51966d03c31bb, type: 3}
       propertyPath: timeToSpawnBoss
-      value: 200
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceb5ddcd8f8db874eaf51966d03c31bb, type: 3}
